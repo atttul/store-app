@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: store-app
+
+  datasource:
+    url: jdbc:mysql://${DB_HOST:localhost}:3306/storedb
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8080
